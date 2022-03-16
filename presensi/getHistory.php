@@ -1,5 +1,7 @@
 <?php
-
+  /**
+   * File ini digunakan untuk mendapatkan history presensi user.
+   */
   include '../config.php';
 
   $id_user = $_POST['id_user'];

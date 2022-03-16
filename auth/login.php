@@ -1,5 +1,7 @@
 <?php
-
+  /**
+   * File ini digunakan untuk melakukan login.
+   */
   include '../config.php';
 
   $email = $_POST['email'];

@@ -1,5 +1,7 @@
 <?php
-
+  /**
+   * File ini digunakan untuk melakukan proses presensi keluar.
+   */
   include '../config.php';
 
   $id_user = $_POST['id_user'];

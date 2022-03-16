@@ -1,5 +1,7 @@
 <?php
-
+  /**
+   * File ini digunakan untuk mendapatkan data presensi terakhir user.
+   */
   include '../config.php';
 
   $id_user = $_POST['id_user'];
@@ -39,6 +41,13 @@
   echo json_encode($array);
 	mysqli_close($koneksi);
 
+  /**
+   * Fungsi tgl_indo digunakan untuk mem-format tanggal ke format indonesia.
+   * 
+   * @param mixed $tanggal berisi tanggal sekarang.
+   * 
+   * @return [type] mengembalikan dalam bentuk tanggal format indonesia, Contoh : 23 Januari 2022.
+   */
   function tgl_indo($tanggal){
 
     $bulan = array (
@@ -61,6 +70,11 @@
     return $pecahkan[2] . ' ' . $bulan[ (int)$pecahkan[1] ] . ' ' . $pecahkan[0];
   }
 
+  /**
+   * Fungsi hari_ini digunakan untuk mem-format hari ini dalam format indonesia.
+   * 
+   * @return [type] mengembalikan dalam bentuk hari indonesia, Contoh : Senin.
+   */
   function hari_ini(){
     $hari = date ("D");
    

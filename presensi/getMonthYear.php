@@ -1,5 +1,7 @@
 <?php
-
+  /**
+   * File ini digunakan untuk mendapatkan data bulan dan tahun yang digunakan untuk filter riwayat presensi.
+   */
   header('Content-Type: application/json');
 
   $month = array(

@@ -1,5 +1,7 @@
 <?php
-
+  /**
+   * File ini digunakan untuk config database dan default timezone.
+   */
   header('Content-Type: application/json');
   date_default_timezone_set('Asia/Jakarta');
   
